@@ -3,6 +3,10 @@ import { createConfig } from "ponder";
 import { ExampleContractAbi } from "./abis/ExampleContractAbi";
 
 export default createConfig({
+  database: { 
+    kind: "postgres", 
+    connectionString: "postgresql://user:password@localhost:5432/postgres", 
+  }, 
   chains: {
     mainnet: {
       id: 1,

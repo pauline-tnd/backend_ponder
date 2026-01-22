@@ -14,7 +14,6 @@ import { http, getAddress, hexToNumber } from "viem";
 export default createConfig({
   database: { 
     kind: "postgres",
-    // connectionString: "postgresql://user:password@localhost:5432/postgres",
     connectionString:process.env.DATABASE_URL, 
   },
   chains: {
